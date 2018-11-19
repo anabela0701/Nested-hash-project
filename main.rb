@@ -1368,3 +1368,16 @@ hospital_location = JSON.parse(%q|
  ]
 }
 |)
+
+def get_hop(arr)
+  i=0
+  until i == 78 
+    puts arr["data"][i][9]
+    i+=1
+  end 
+end 
+
+get_hop(hospital_location)
+
+# we need to itetate through an array of arrays and check if item number 9 is equal to the users input burogh 
+# as we iterate through the arrays we need to move from array to array 
